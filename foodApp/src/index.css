@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+#root {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  width: 100%;
+  max-width: 900px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 0px 10px black;
+}
+
+.Header, .Footer, .navRow, .homePage, .randomPage {
+  width: 100%;
+}
+
+h1 {
+  background-color: rgb(230, 199, 150);
+  width: 100%;
+  display: grid;
+  place-items: center;
+  height: 10vh;
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: none;
+  width: 50%;
+  height: 100%;
+}
+
+li {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+li a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+
+.navRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 80px;
+  padding: 10px 20px;
+}
+
+form {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+input {
+  width: 80%;
+  height: 70%;
+  font-size: 1rem;
+  padding-left: 8px;
+  border-radius: 15px;
+  border: 2px solid black;
+  outline: none;
+}
+
+.searchButton {
+  width: 10%;
+  height: 40%;
+}
+
+.searchButton:focus {
+  outline: none;
+}
+
+.about-page {
+  width: 100%;
+  flex-grow: 1;
+  padding: 0rem 1rem;
+  text-align: center;
+  overflow-y: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.aboutTitle {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 1.75rem;
+}
+
+.aboutParagraph {
+  font-size: 1.25rem;
+  width: 80%;
+}
+
+.homePage {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.left-side {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 100%;
+}
+
+.welcome {
+  margin-bottom: 10px;
+}
+
+.welcome-p {
+  margin-bottom: 15px;
+}
+
+.homeMealTitle {
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.homeMealInstructions {
+  font-size: 1rem;
+  text-align: center;
+  width: 80%;
+}
+
+.homePage img, .randomPhoto {
+  height: 500px;
+  border-radius: 20px;
+  border: 4px solid black;
+}
+
+table {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+}
+
+tr {
+  text-align: center;
+}
+
+.cap {
+  text-transform: capitalize;
+}
+
+.ingredientsTitle {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.randomPage {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.generate-button {
+  height: 50px;
+  width: 50%;
+  font-size: 2rem;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  cursor: pointer;
+  background-color: rgb(230, 199, 150);
+  transition: background-color .25s;
+}
+
+.generate-button:hover {
+  background: rgb(192, 154, 94);
+}
+
+.generate-button:active {
+  background: rgb(189, 148, 83);
+}
+
+.centerButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%
+}
+
+.newRequestButton {
+  height: 40px;
+  width: 30%;
+  font-size: 1rem;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  cursor: pointer;
+  background-color: rgb(230, 199, 150);
+  transition: background-color .25s;
+}
+
+.newRequestButton:hover {
+  background: rgb(192, 154, 94);
+}
+
+.searchPage {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  padding: 20px;
+  width: 100%;
+}
+
+.feedContainer {
+  width: 100%;
+  height: 100%;
+}
+
+.listPhoto {
+  width: 200px;
+  border: 2px solid black;
+  box-shadow: 0px 0px 10px black;
+}
+
+.feedPost {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  margin-bottom: 15px;
+}
+
+.right-side {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.instructionsP {
+  width: 400px;
+}
+
+.mealHeader {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: black;
+}
+
+.errorPage, .selectedPostPage {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow-y: auto;
+  padding: 20px;
+  width: 100%;
+}
+
+footer {
+  background-color: rgb(230, 199, 150);
+  min-height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
