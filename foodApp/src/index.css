@@ -211,6 +211,7 @@ tr {
   cursor: pointer;
   background-color: rgb(230, 199, 150);
   transition: background-color .25s;
+  color: black;
 }
 
 .generate-button:hover {
@@ -240,6 +241,7 @@ tr {
   cursor: pointer;
   background-color: rgb(230, 199, 150);
   transition: background-color .25s;
+  color: black;
 }
 
 .newRequestButton:hover {
