@@ -302,10 +302,146 @@ tr {
   width: 100%;
 }
 
+.menu {
+  font-size: 1.5rem;
+  margin-right: 15px;
+}
+
+.iconX {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.hamburgerList {
+  width: 75%;
+}
+
+.navWord a {
+  font-size: 1.25rem;
+}
+
 footer {
   background-color: rgb(230, 199, 150);
   min-height: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 850px) {
+  .generate-button {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .generate-button {
+    font-size: 1.25rem;
+  }
+  .listPhoto {
+    width: 150px;
+  }
+  .mealHeader {
+    font-size: 1.25rem;
+  }
+  .instructionsP {
+    font-size: .9rem;
+    width: 350px;
+  }
+}
+
+@media (max-width: 600px) {
+  li a {
+    font-size: 1rem;
+  }
+  input {
+    height: 60%;
+    font-size: .9rem;
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 550px) {
+  .homePage img, .randomPhoto {
+    height: 350px;
+  }
+  .navRow {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  h2 {
+    font-size: 1.25rem;
+  }
+  table {
+    font-size: .9rem;
+  }
+  .homeMealInstructions {
+    font-size: .9rem;
+  }
+  .generate-button {
+    font-size: 1rem;
+    padding: 10px 10px;
+  }
+  .newRequestButton {
+    width: 40%;
+  }
+  .instructionsP {
+    width: 300px;
+  }
+  .listPhoto {
+    width: 125px;
+  }
+  .mealHeader {
+    font-size: 1rem;
+  }
+  .instructionsP {
+    font-size: .8rem;
+    width: 250px;
+  }
+}
+
+@media (max-width: 430px) {
+  .homePage img, .randomPhoto {
+    height: 325px;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  form {
+    width: 80%;
+  }
+  .newRequestButton {
+    width: 50%;
+  }
+  .instructionsP {
+    width: 200px;
+  }
+}
+
+@media (max-width: 365px) {
+  .homePage img, .randomPhoto {
+    height: 275px;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  form {
+    width: 80%;
+  }
+  .hamburgerList {
+    margin-left: 15px;
+  }
+  .instructionsP {
+    font-size: .75rem;
+    width: 150px;
+  }
+  .mealHeader {
+    font-size: .9rem;
+  }
+  .newRequestButton {
+    width: 60%;
+  }
+  .errorPage p {
+    font-size: .85rem;
+  }
 }
