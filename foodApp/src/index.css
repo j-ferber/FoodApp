@@ -364,7 +364,7 @@ footer {
 }
 
 @media (max-width: 550px) {
-  .homePage img, .randomPhoto {
+  .homePage img, .randomPhoto, .selectedPhoto {
     height: 350px;
   }
   .navRow {
@@ -403,7 +403,7 @@ footer {
 }
 
 @media (max-width: 430px) {
-  .homePage img, .randomPhoto {
+  .homePage img, .randomPhoto, .selectedPhoto {
     height: 325px;
   }
   h1 {
@@ -421,7 +421,7 @@ footer {
 }
 
 @media (max-width: 365px) {
-  .homePage img, .randomPhoto {
+  .homePage img, .randomPhoto, .selectedPhoto  {
     height: 275px;
   }
   h1 {

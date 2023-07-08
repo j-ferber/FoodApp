@@ -39,7 +39,7 @@ const SelectedPost = () => {
         {!loading &&
           <>
             <h2 style={{ marginBottom: '20px', marginTop: '10px'}}>Here is your selected meal:</h2>
-            <img src={data.meals[0].strMealThumb} alt="" />
+            <img src={data.meals[0].strMealThumb} alt="" className='selectedPhoto'/>
             <h2 className='homeMealTitle'>{data.meals[0].strMeal}</h2>
             <p className='homeMealInstructions'>{data.meals[0].strInstructions}</p>
             <h2 className='ingredientsTitle'>What You'll Need</h2>
