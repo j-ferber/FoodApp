@@ -18,6 +18,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: lightgrey;
 }
 
 .app {
@@ -29,6 +30,7 @@ body {
   align-items: center;
   flex-direction: column;
   box-shadow: 0px 0px 10px black;
+  background: white;
 }
 
 .Header, .Footer, .navRow, .homePage, .randomPage {
