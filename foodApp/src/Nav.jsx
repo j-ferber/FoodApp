@@ -31,9 +31,9 @@ const Nav = ({ search, setSearch }) => {
             <FaSearch tabIndex="0" className='searchButton' onClick={handleSearch} style={{cursor: 'pointer'}}/>
           </form>
           <ul>
-            <li><Link to='/'>Home</Link></li>
-            <li><Link to='about'>About</Link></li>
-            <li><Link to='random'>Random</Link></li>
+            <li><Link to='/' onClick={() => setLoading(true)}>Home</Link></li>
+            <li><Link to='about' onClick={() => setLoading(true)}>About</Link></li>
+            <li><Link to='random' onClick={() => setLoading(true)}>Random</Link></li>
           </ul>
         </>
       ) : !hamClicked ? (
@@ -47,9 +47,9 @@ const Nav = ({ search, setSearch }) => {
       ) : (
         <>
           <ul className='hamburgerList'>
-            <li className='navWord'><Link to='/'>Home</Link></li>
-            <li className='navWord'><Link to='about'>About</Link></li>
-            <li className='navWord'><Link to='random'>Random</Link></li>
+            <li className='navWord' onClick={() => setLoading(true)}><Link to='/'>Home</Link></li>
+            <li className='navWord' onClick={() => setLoading(true)}><Link to='about'>About</Link></li>
+            <li className='navWord' onClick={() => setLoading(true)}><Link to='random'>Random</Link></li>
           </ul>
           <BiX className='iconX' onClick={() => setHamClicked(false)} />
         </>   
